@@ -78,21 +78,11 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='組員.html'>組員</a><li><a href='課程內容.html'>課程內容</a><ul><li><a href='建立可攜系統.html'>建立可攜系統</a><li><a href='ungit-建立.html'>ungit-建立</a><ul><li><a href='更改帳號.html'>更改帳號</a><li><a href='ungit上推問題與解決.html'>ungit上推問題與解決</a><li><a href='ungit上傳資料.html'>ungit上傳資料</a></li></ul><li><a href='SSH Public Key.html'>SSH Public Key</a></li></ul><li><a href='V-rep.html'>V-rep</a><ul><li><a href='模擬影片.html'>模擬影片</a><li><a href='手足球圖檔.html'>手足球圖檔</a><li><a href='bobbleRob製作.html'>bobbleRob製作</a></li></ul><li><a href='個人操作影片.html'>個人操作影片</a><li><a href='個人期中影片.html'>個人期中影片</a><li><a href='git 手冊-1.html'>git 手冊-1</a><li><a href='git 手冊-2.html'>git 手冊-2</a><ul><li><a href='伺服器上的Git.html'>伺服器上的Git</a><ul><li><a href='通訊協定種類.html'>通訊協定種類</a><li><a href='在伺服器上佈署Git.html'>在伺服器上佈署Git</a><li><a href='產生個人的SSH公鑰.html'>產生個人的SSH公鑰</a><li><a href='伺服器的設定.html'>伺服器的設定</a><li><a href='Git常駐程式.html'>Git常駐程式</a></li></ul><li><a href='分散式的Git.html'>分散式的Git</a><ul><li><a href='分散式工作流程.html'>分散式工作流程</a></li></ul></nav><section><div id="tipue_search_content">git 手冊-1 << <a href='git 手冊-1.html'>Previous</a> <a href='伺服器上的Git.html'>Next</a> >> 伺服器上的Git<br /><h1>git 手冊-2</h1>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='組員.html'>組員</a><li><a href='課程內容.html'>課程內容</a><ul><li><a href='建立可攜系統.html'>建立可攜系統</a><li><a href='ungit-建立.html'>ungit-建立</a><ul><li><a href='更改帳號.html'>更改帳號</a><li><a href='ungit上推問題與解決.html'>ungit上推問題與解決</a><li><a href='ungit上傳資料.html'>ungit上傳資料</a></li></ul><li><a href='SSH Public Key.html'>SSH Public Key</a></li></ul><li><a href='V-rep.html'>V-rep</a><ul><li><a href='模擬影片.html'>模擬影片</a><li><a href='手足球圖檔.html'>手足球圖檔</a><li><a href='bobbleRob製作.html'>bobbleRob製作</a></li></ul><li><a href='個人操作影片.html'>個人操作影片</a><li><a href='個人期中影片.html'>個人期中影片</a><li><a href='git 手冊-1.html'>git 手冊-1</a><li><a href='git 手冊-2.html'>git 手冊-2</a><li><a href='git 手冊-3.html'>git 手冊-3</a><ul><li><a href='伺服器上的Git.html'>伺服器上的Git</a><ul><li><a href='通訊協定種類.html'>通訊協定種類</a><li><a href='在伺服器上佈署Git.html'>在伺服器上佈署Git</a><li><a href='產生個人的SSH公鑰.html'>產生個人的SSH公鑰</a><li><a href='伺服器的設定.html'>伺服器的設定</a><li><a href='Git常駐程式.html'>Git常駐程式</a></li></ul><li><a href='分散式的Git.html'>分散式的Git</a><ul><li><a href='分散式工作流程.html'>分散式工作流程</a></li></ul></nav><section><div id="tipue_search_content">git 手冊-1 << <a href='git 手冊-1.html'>Previous</a> <a href='git 手冊-3.html'>Next</a> >> git 手冊-3<br /><h1>git 手冊-2</h1>
 <p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; c09669c29e2afd5b76bdb1c11de0eba0d9dc6ec9</p>
-<p>幾乎每一種版本控制系統（Version Control System，以下簡稱 VCS）都支援某種形式的分支（branch）功能， 使用分支意味著你可以從開發主線上分離開來，然後在不影響主線的情況下繼續工作。<br/>有人把 Git 的分支模型視為它的「殺手級功能」， 它有何特別之處呢？新建分支的操作幾乎可以在瞬間完成，並且一般來說切換不同分支也很快； 跟其它的 VCS 不一樣的地方是 Git 鼓勵在工作流程中頻繁地使用分支與合併（merge），即使一天之內進行許多次都沒問題。</p>
-<p><span>git branch </span>:建立一個新的分支這會在目前提交上新建一個指標，它並不會切換到這個分支。</p>
-<p><span>git checkout + 分支名稱</span>:切換到一個已經存在的分支。</p>
-<p>*切換分支會修改工作目錄裡的檔案<br/>當你在 Git 中切換分支時，工作目錄內的檔案將會被修改； 如果切換到舊分支，你的工作目錄會回復到看起來就像當初你最後一次在這個分支提交時的樣子。 如果 Git 無法很乾淨地切換過去，它就不會讓你切換過去。</p>
-<p><span>git merge </span>:緊急修正分支進行合併。</p>
-<p>git add .</p>
-<p>git commit -m "檔案名"</p>
-<p>git push</p>
-<p>mkdir 名稱 ：創建資料夾</p>
-<p><span style="color: #ff0000;">github版本回推</span></p>
-<p>1.git  reflog</p>
-<p>2.git reset  --hard 版本名稱(下圖)</p>
-<p><img alt="" height="648" src="./../images/5465.png" width="1152"/></p>
-<p>3.git  push  -f  </p>
-<p></p>
-<p>.</p><br />git 手冊-1 << <a href='git 手冊-1.html'>Previous</a> <a href='伺服器上的Git.html'>Next</a> >> 伺服器上的Git</div></section></div></body></html>
+=======
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/xg-yQ9kmCJg" width="560"></iframe></p>
+<p>40623140</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/OPCqtWoW_s4" width="560"></iframe></p>
+<p>40623129</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ieCXEfMXd40" width="560"></iframe></p><br />git 手冊-1 << <a href='git 手冊-1.html'>Previous</a> <a href='git 手冊-3.html'>Next</a> >> git 手冊-3</div></section></div></body></html>
